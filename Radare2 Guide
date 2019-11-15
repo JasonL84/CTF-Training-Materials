@@ -1,0 +1,8 @@
+Installation:
+
+Download the newest release of Radare2 from https://github.com/radareorg/radare2/releases
+Unzip file 
+Navigate to folder and run command sys/install.sh (if you want global access) otherwise run sys/user.sh
+If there are any errors create an issue and I will take a look at it
+
+Running Radare2:
