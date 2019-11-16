@@ -2,12 +2,16 @@
 
 ## Linux/MacOS:
 Download the newest release of Radare2 from https://github.com/radareorg/radare2/releases
+
 Unzip file 
+
 Navigate to folder and run command sys/install.sh (if you want global access) otherwise run sys/user.sh
 
 ## Windows:
 Download latest binary from https://radare.mikelloc.com/list (Note as of last update version 4.00 appears to be corrupted, download the msvc installer for version 3.9)
+
 Run binary
+
 Done.
 
 If there are any errors create an issue on the repository and I will take a look at it
@@ -30,10 +34,21 @@ To enter visual mode run the command V! when the shell opens
 
 # Summary of useful commands:
 
+While in visual mode press shift + ; to enter commands (similar to vim)
+
+s \[target\] seeks to target location, target can be specified as a label, as an address (hex) or as an offset to a register ie (R1 + 4) 
+
+ood \[file\] opens the file in debug mode - note make sure that the file is executable done by using chmod in linux
+
+ds (used in debugger mode only) carries out the current instruction and moves to the next line - this is used to track changes in register values
+
+dc (used in debugger mode only) : lets the script continue running until it hits the next breakpoint
+
+# Summary of useful keyboard shortcuts:
+
 //TODO
 
 # I want to do something - wat do? (Common objectives in reverse engineering)
 
-//TODO and change the title
-
+//TODO
 # Debugging using Radare 2
