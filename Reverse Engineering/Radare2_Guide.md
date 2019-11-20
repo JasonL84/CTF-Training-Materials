@@ -49,6 +49,7 @@ dc (used in debugger mode only) : lets the script continue running until it hits
 //TODO
 
 # I want to do something - wat do? (Common objectives in reverse engineering)
+Getting to the main function
 
-//TODO
+Fun fact, the start locaton is not the actual main function(most of the time), typically it does stuff like setup registers/the stack etc... Odds are there is nothing intersting there. To find the main function use the seek command `s main`
 # Debugging using Radare 2
